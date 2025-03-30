@@ -46,3 +46,15 @@ function mergeConfig(nextConfig, userConfig) {
 }
 
 export default nextConfig
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: "export",
+  images: {
+    unoptimized: true, 
+  },
+  basePath: "/real-estate-website", 
+  assetPrefix: "/real-estate-website/",
+};
+
+module.exports = nextConfig;
