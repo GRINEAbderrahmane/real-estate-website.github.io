@@ -13,9 +13,11 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  output: 'export',
   images: {
     unoptimized: true,
   },
+  basePath: process.env.NODE_ENV === 'production' ? '/real-estate-website' : '',
   experimental: {
     webpackBuildWorker: true,
     parallelServerBuildTraces: true,
